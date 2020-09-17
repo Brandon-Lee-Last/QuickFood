@@ -13,7 +13,7 @@ public class Customer extends Restaurant implements CustomerMap{
 	protected String streetNumber;
 	protected String Street;
 	protected String Area;
-	protected String Location;
+	protected int Location;
 	protected String phoneNumber;
 	protected String restaurant;
 	protected String Instructions;
@@ -24,7 +24,7 @@ public class Customer extends Restaurant implements CustomerMap{
 	
 	//Constructor.
 	public Customer(String _name, String _strNumber, String _street, String _area,
-			String _location, String _number, String _restaurant,
+			String _location, int _number, String _restaurant,
 			ArrayList<Integer> _count, String _instructions, int _total) throws IOException {
 		this.Name = _name;
 		this.Location = _location;
