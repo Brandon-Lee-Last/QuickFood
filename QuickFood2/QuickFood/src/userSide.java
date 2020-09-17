@@ -60,35 +60,35 @@ public class userSide extends Order implements CustomerMap{
 		}
 		else{
 				try {
-			//creates a new restaurant object.
-			Restaurant rest = new Restaurant();
-			restaurant = rest.getFood();//calls the method to fetch the menu for the restaurant user picked.
-			//Creates a new customer object and stores all the variables in the required parameters.
-			Customer user = new Customer(name, streetNumber, street, area, location, number, restaurant, rest.amount, rest.GetInstructions(), rest.getTotal());
-			//Stores the name and user object into Hash-Map, that will generate a customer ID.
-			map.put(name , "Customer@" + ID);
-			//Creates a new order object with same parameters as Customer.
-			Order order = new Order(map.get(name).toString(), name, streetNumber, street, area, location, number, restaurant, rest.amount, rest.seeFood(), rest.GetInstructions(), rest.getTotal());
-			
-			//checks whether the location user is in is valid.
-			if(order.isAvailable() == true) {
-				System.out.print("The restaurant is on it!, \r\nReceipt printed.");
-				order.getReciept();//prints out the receipt.
+				//creates a new restaurant object.
+				Restaurant rest = new Restaurant();
+				restaurant = rest.getFood();//calls the method to fetch the menu for the restaurant user picked.
+				//Creates a new customer object and stores all the variables in the required parameters.
+				Customer user = new Customer(name, streetNumber, street, area, location, number, restaurant, rest.amount, rest.GetInstructions(), rest.getTotal());
+				//Stores the name and user object into Hash-Map, that will generate a customer ID.
+				map.put(name , "Customer@" + ID);
+				//Creates a new order object with same parameters as Customer.
+				Order order = new Order(map.get(name).toString(), name, streetNumber, street, area, location, number, restaurant, rest.amount, rest.seeFood(), rest.GetInstructions(), rest.getTotal());
+					
+				//checks whether the location user is in is valid.
+				if(order.isAvailable() == true) {
+					System.out.print("The restaurant is on it!, \r\nReceipt printed.");
+					order.getReciept();//prints out the receipt.
+				}
+				else {
+					//lets the user know that the location is not supported.
+					System.out.print("We dont deliver to " + location + " , please try again later.");
+				}
+					
+				user.getCustomers();
+				user.groupLoc();
+				order.getReciept();
+				order.updateDriver();
+				input.close();
 			}
-			else {
-				//lets the user know that the location is not supported.
-				System.out.print("We dont deliver to " + location + " , please try again later.");
+			catch(IOException  e) {
+				e.printStackTrace( System.out );
 			}
-			
-			user.getCustomers();
-			user.groupLoc();
-			order.getReciept();
-			order.updateDriver();
-			input.close();
-		}
-		catch(IOException  e) {
-			e.printStackTrace( System.out );
-		}
 		}
 	}
 }
