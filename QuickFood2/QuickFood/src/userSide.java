@@ -55,7 +55,11 @@ public class userSide extends Order implements CustomerMap{
 			}
 		}
 		
-		try {
+		if(number.length != 10){
+			System.out.print("Your number is incorrect, please make sure you have no space in-between numbers and the length should be 10 digits");
+		}
+		else{
+				try {
 			//creates a new restaurant object.
 			Restaurant rest = new Restaurant();
 			restaurant = rest.getFood();//calls the method to fetch the menu for the restaurant user picked.
@@ -84,6 +88,7 @@ public class userSide extends Order implements CustomerMap{
 		}
 		catch(IOException  e) {
 			e.printStackTrace( System.out );
+		}
 		}
 	}
 }
