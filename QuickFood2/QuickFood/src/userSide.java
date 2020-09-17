@@ -8,7 +8,7 @@ public class userSide extends Order implements CustomerMap{
 	
 //Constructor with super class variables.
 	public userSide(String _orderID, String _name, String _strNumber, String _street, String _area, String _location,
-			String _phone, String _restaurant, ArrayList<Integer> _count, ArrayList<String> _food, String _instructions,
+			int _phone, String _restaurant, ArrayList<Integer> _count, ArrayList<String> _food, String _instructions,
 			int _total) throws IOException {
 		super(_orderID, _name, _strNumber, _street, _area, _location, _phone, _restaurant, _count, _food, _instructions,
 				_total);
@@ -64,11 +64,11 @@ public class userSide extends Order implements CustomerMap{
 				Restaurant rest = new Restaurant();
 				restaurant = rest.getFood();//calls the method to fetch the menu for the restaurant user picked.
 				//Creates a new customer object and stores all the variables in the required parameters.
-				Customer user = new Customer(name, streetNumber, street, area, location, number, restaurant, rest.amount, rest.GetInstructions(), rest.getTotal());
+				Customer user = new Customer(name, streetNumber, street, area, location, Integer.parseInt(number), restaurant, rest.amount, rest.GetInstructions(), rest.getTotal());
 				//Stores the name and user object into Hash-Map, that will generate a customer ID.
 				map.put(name , "Customer@" + ID);
 				//Creates a new order object with same parameters as Customer.
-				Order order = new Order(map.get(name).toString(), name, streetNumber, street, area, location, number, restaurant, rest.amount, rest.seeFood(), rest.GetInstructions(), rest.getTotal());
+				Order order = new Order(map.get(name).toString(), name, streetNumber, street, area, location, Integer.parseInt(number), restaurant, rest.amount, rest.seeFood(), rest.GetInstructions(), rest.getTotal());
 					
 				//checks whether the location user is in is valid.
 				if(order.isAvailable() == true) {

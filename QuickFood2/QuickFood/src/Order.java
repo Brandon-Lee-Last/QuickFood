@@ -21,7 +21,7 @@ public class Order extends Customer implements CustomerMap{
 	
 	//Constructor.
 	public Order(String _orderID, String _name, String _strNumber, String _street,
-			String _area,  String _location, String _phone, String _restaurant,
+			String _area,  String _location, int _phone, String _restaurant,
 			ArrayList<Integer> _count, ArrayList<String> _food, String _instructions, int _total) throws IOException {
 		
 		super(_name, _strNumber, _street, _area, _location, _phone, _restaurant, _count, _instructions, _total);

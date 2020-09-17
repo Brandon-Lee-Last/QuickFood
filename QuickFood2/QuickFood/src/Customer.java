@@ -13,8 +13,8 @@ public class Customer extends Restaurant implements CustomerMap{
 	protected String streetNumber;
 	protected String Street;
 	protected String Area;
-	protected int Location;
-	protected String phoneNumber;
+	protected String Location;
+	protected int phoneNumber;
 	protected String restaurant;
 	protected String Instructions;
 	protected ArrayList<Integer> count;
