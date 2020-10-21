@@ -2,7 +2,7 @@
 A ordering program that lets the user pick the restruant and the meal they would like to have, then an reciept is printed for the user letting them know which driver is delivering and the cost of the order.
 
 # ---- Logic of program ----
-  ~The drivers chosen for the user is dependant on the location the user entered, the program reads the .txt file and looks for a driver in the location and with the least amount  of deliveries. If the location is out opf bound for the driver, the program will throw an informational message that lets the user know.
+  ~The drivers chosen for the user is dependant on the location the user entered, the program reads the .txt file and looks for a driver in the location and with the least amount  of deliveries. If the location is out of bounds for the driver, the program will throw an informational message that lets the user know.
   
   ~The customer ID is random based and every customer gets a unique one.
   
