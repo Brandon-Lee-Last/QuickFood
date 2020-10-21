@@ -16,15 +16,21 @@ A ordering program that lets the user pick the restruant and the meal they would
 
 # ---- Skills Learned ----
   ~The use of intefaces and constructors
+  
   ~How and when to use private, public and protected variables.
+  
   ~Debugging of issues that effect the program as a whole.
+  
   ~Git and the pipeline of when branching into experimental phases that may improve the overall efficiency of the program.
+  
   ~The use of streaming classes that read and write to external text files.
+  
   ~How and when classes should communicate with each other.
   
   
   # ---- How to use ----
    ~Clone or download .zip file and extract.
+   
    ~Project should have no errors, runs pure java in the console window.
   
   # ---- Help ----
