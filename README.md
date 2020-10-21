@@ -25,5 +25,5 @@ A ordering program that lets the user pick the restruant and the meal they would
   # ---- Help ----
     ~If using eclipse, make sure you have console input availabilty activated.
       ~~ Run --> Run Configurations --> Arguments (it is the 2nd tab on the right) --> Program arguments
-      #https://stackoverflow.com/questions/4918355/how-to-take-user-inputs-in-eclipse/4918368
+      # https://stackoverflow.com/questions/4918355/how-to-take-user-inputs-in-eclipse/4918368
  
