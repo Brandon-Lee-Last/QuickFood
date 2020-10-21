@@ -3,10 +3,15 @@ A ordering program that lets the user pick the restruant and the meal they would
 
 # ---- Logic of program ----
   ~The drivers chosen for the user is dependant on the location the user entered, the program reads the .txt file and looks for a driver in the location and with the least amount  of deliveries. If the location is out opf bound for the driver, the program will throw an informational message that lets the user know.
+  
   ~The customer ID is random based and every customer gets a unique one.
+  
   ~The food can be multiplied and then the cost will do so as well.
+  
   ~When user accepts the order, a reciept will be printed stating the cost and the driver along with the information of the customer such as address, name ect.
+  
   ~The drivers update the amount of packages they have to deliver.
+  
   ~Customers details are kept in a file.
 
 # ---- Skills Learned ----
