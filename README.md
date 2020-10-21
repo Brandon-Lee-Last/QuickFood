@@ -22,8 +22,9 @@ A ordering program that lets the user pick the restruant and the meal they would
    * Clone or download .zip file and extract.
    * Runs pure java in the console window.
   
+  
   # ---- Help ----
-    * If using eclipse, make sure you have console input availabilty activated.
-       * Run --> Run Configurations --> Arguments (it is the 2nd tab on the right) --> Program arguments
+     If using eclipse, make sure you have console input availabilty activated.
+     Run --> Run Configurations --> Arguments (it is the 2nd tab on the right) --> Program arguments.
       (https://stackoverflow.com/questions/4918355/how-to-take-user-inputs-in-eclipse/4918368)
  
